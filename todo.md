@@ -1,4 +1,5 @@
 #### IMPORTANT : All components should build using Material UI
+<<<<<<< HEAD
 
 #### IMPORTANT : Use CSS Flex
 
@@ -16,6 +17,21 @@
 
 ## [] : try use function base components whether state management is not require
 
+=======
+#### IMPORTANT : Use CSS Flex
+#### IMPORTANT : Use js object convention for css also !
+
+## [] : create react app
+
+## [] : starting project from the scratch
+
+## [] : install material-ui & react-router-dom through 'npm install'
+
+## [] : build AppBar for both Screen as a re-useable component, starting from App.js
+
+## [] : try use function base components whether state management is not require
+
+>>>>>>> c581002ba89f2d0c31a3ef24dabaa99bfb797143
 ## [] : use triangular folder structure convention - split components to different folders
 
        - components, containers, routers, hoc

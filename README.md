@@ -37,3 +37,7 @@ To run the project you need to navigate to the project folder and then run this 
 ```
 $npm start
 ```
+## Conclusion
+The application is created with lots of ♥. And only for my personal purpose !
+
+[Abdur Rahman Robin](https://twitter.com/robin4java)

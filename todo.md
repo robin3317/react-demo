@@ -12,22 +12,22 @@
 
          - material-ui/core, material-ui/icons
 
-## [] : build AppBar for both Screen as a re-useable component, starting from App.js
+## [x] : build AppBar for both Screen as a re-useable component, starting from App.js
 
-## [] : try use function base components whether state management is not require
+## [x] : try use function base components whether state management is not require
 
-## [] : use triangular folder structure convention - split components to different folders
+## [x] : use triangular folder structure convention - split components to different folders
 
        - components, containers, routers, hoc
 
-## [] : passing data from Screen1 & Screen2 to AppBar
+## [x] : passing data from Screen1 & Screen2 to AppBar
 
-## [] : flag for +ADD button showing. It shows on screen1 & doesn't screen2
+## [x] : flag for +ADD button showing. It shows on screen1 & doesn't screen2
 
-## [] : screen1 - +ADD button
+## [x] : screen1 - +ADD button
 
-## [] : screen1 - subheading ~> participants with number
+## [x] : screen1 - subheading ~> participants with number
 
-## [] : screen2 - subheading ~> 30m sprint
+## [x] : screen2 - subheading ~> 30m sprint
 
-## [] : date and time picker for screen2
+## [x] : date and time picker for screen2

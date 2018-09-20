@@ -37,6 +37,10 @@ To run the project you need to navigate to the project folder and then run this 
 ```
 $npm start
 ```
+## The Two Routes Are -
+* For Screen1 : localhost:3000/
+* For Screen2 : localhost:3000/screen2
+
 ## Conclusion
 The application is created with lots of ♥. And only for my personal purpose !
 

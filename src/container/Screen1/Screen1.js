@@ -20,6 +20,7 @@ class Screen1 extends Component {
     title: "STANDING 30 METERS",
     subTitle: "Participants",
     hasButton: true,
+    hasDateTime: false,
     clickedNumber: 1,
     participantsList: [],
     radiobuttonSelectedValue: 0

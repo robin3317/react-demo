@@ -38,6 +38,13 @@ const styles = {
   buttonStyle: {
     backgroundColor: "#FFA500",
     marginRight: "2rem"
+  },
+  iconButton: {
+    color: "black"
+  },
+  timer: {
+    marginLeft: "1rem",
+    marginRight: ".5rem"
   }
 };
 

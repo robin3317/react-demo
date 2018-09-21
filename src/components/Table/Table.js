@@ -47,15 +47,16 @@ const TableComponent = props => {
     <Table className={classes.table}>
       <TableHead>
         <TableRow>
-          {props.column.map(el => {
+          {props.column.map((el, index) => {
             return (
-              <CustomTableCell className={classes.columnStyle}>
+              <CustomTableCell key={index} className={classes.columnStyle}>
                 {el}
               </CustomTableCell>
             );
           })}
         </TableRow>
       </TableHead>
+
       <TableBody>
         {props.people.map((eachPeople, index) => {
           return (

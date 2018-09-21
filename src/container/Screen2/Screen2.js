@@ -20,6 +20,7 @@ class Screen2 extends Component {
     title: "ODAIN ROSE",
     subTitle: "30m sprint",
     hasButton: false,
+    hasDateTime: true,
     buttonList: [],
     clickedNumber: 1,
     colorArray: []
@@ -61,9 +62,7 @@ class Screen2 extends Component {
         <div className={classes.base}>
           <Paper className={classes.buttonContainer}>
             {this.state.buttonList.map((button, index) => {
-              {
-                return this.renderColoredButton(button, index, classes);
-              }
+              return this.renderColoredButton(button, index, classes);
             })}
 
             <Add className={classes.addButton} onClick={this.handleClick} />

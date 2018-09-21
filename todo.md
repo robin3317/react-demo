@@ -24,6 +24,8 @@
 
 ## [x] : flag for +ADD button showing. It shows on screen1 & doesn't screen2
 
+## [x] : flag for date and time, only shows in screen2
+
 ## [x] : screen1 - +ADD button
 
 ## [x] : screen1 - subheading ~> participants with number
@@ -31,3 +33,7 @@
 ## [x] : screen2 - subheading ~> 30m sprint
 
 ## [x] : date and time picker for screen2
+
+## [x] : show current date and time by so far
+
+## [x] : using calender and time icon as svg

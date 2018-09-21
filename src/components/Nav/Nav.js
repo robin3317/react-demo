@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -21,17 +21,23 @@ const Nav = props => {
       }}
     />
   );
-  console.log(props);
   const { classes } = props;
-  const { title, subTitle, hasButton, numberOfParticipants } = props.data;
+  const {
+    title,
+    subTitle,
+    hasButton,
+    hasDateTime,
+    numberOfParticipants
+  } = props.data;
   return (
-    <div>
+    <Fragment>
       <AppBar position="static" className={classes.appBar}>
         <Toolbar className={classes.navStyle}>
-          <IconButton color="#000000">
+          <IconButton className={classes.iconButton}>
             <KeyboardArrowLeft />
           </IconButton>
           <div className={hasButton ? classes.titleContainer : props.navStyle}>
+            {/*   Title   */}
             <Typography
               variant="display1"
               color="inherit"
@@ -39,20 +45,59 @@ const Nav = props => {
             >
               {title}
             </Typography>
+
+            {/*   hr   */}
             <ColoredLine color="black" />
+
+            {/*   Subtitle   */}
             <Typography
               variant="subheading"
-              color="#000000"
+              color="textPrimary"
               className={classes.subTitle}
             >
               {subTitle}
+
+              {/*   Participants Option   */}
               {hasButton && (
                 <span className={classes.perticipantsNumber}>
                   {numberOfParticipants}
                 </span>
               )}
+
+              {/*   Show Date And Time For Screen2   */}
+              {hasDateTime && (
+                <Fragment>
+                  <span>
+                    {" "}
+                    <svg
+                      className={classes.timer}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 -2 24 24"
+                    >
+                      <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
+                    </svg>
+                    11-12-2017
+                  </span>
+                  <span>
+                    <svg
+                      className={classes.timer}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 -2 24 24"
+                    >
+                      <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                    </svg>
+                    09:30
+                  </span>
+                </Fragment>
+              )}
             </Typography>
           </div>
+
+          {/*   Add Button For Screen1   */}
           {hasButton && (
             <Button
               color="inherit"
@@ -64,7 +109,7 @@ const Nav = props => {
           )}
         </Toolbar>
       </AppBar>
-    </div>
+    </Fragment>
   );
 };
 
